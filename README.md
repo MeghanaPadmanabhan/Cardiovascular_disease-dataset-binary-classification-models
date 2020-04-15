@@ -18,11 +18,67 @@ k equal samples and training is performed on k-1 sample sets and validation on o
 </ol>
 <li> Support Vector Machines (SVM)
   <ol>
-    <li> SVM with Linear Kernel (with default hyperparameters), with features selected using f-test, mutual information and Recursive feature elimination (RFE). Hyperparameter selected using validation curves. 
-
-
-
-
-
-
+    <li> SVM with Linear Kernel (with default hyperparameters), with features selected using f-test, mutual information and Recursive feature elimination (RFE). Hyperparameter selected using validation curves. </li>
+    <li> SVM with RBF kernel (with default hyperparameters), with features selected using f-test, mutual information and Recursive feature elimination (RFE). Hyperparameter selected using validation curves. </li>
+  </ol>
+  <li> Decision Trees
+    <ol>
+      <li> Decision Tree with default parameters, hyperparameter selected decision tree.</li>
+        <li>Bagged decision trees, bagged decision trees with hyperparameter selected bagging parameters. </li>
+    </ol>
+  </li>
+  <li> Random forest
+    <ol>
+      <li> Plain random forest, and hyperparameter selected random forest</li>
+    </ol>
+  </li>
+  <li>Extra Trees classifier
+    <ol>
+      <li> Extra trees classifier, and hyperparameter selected Extra Trees classifier </li>
+    </ol>
+  </li>
+  <li> K-nearest neighbor 
+    <ol>
+      <li> K-nearest neighbor with default parameters, and hyperparameter selected K nearest neighbor (Using rule of thumb of sqrt()).</li>
+      <li> Bagged K-nearest neighbor with hyperparameter selected bagging parameters.</li>
+    </ol>
+  </li>
+  <li> Multilayer perceptron (MLP)
+    <ol>
+      <li> Multilayer perceptron with default parameters and hyperparameter seleted MLP. </li>
+    </ol>
+  </li>
+  <li> Gradient Boosted Trees (GBT)
+    <ol>
+      <li> GBT with default parameters, GBT with early stopping</li>
+      <li> GBT with hyperparameter selection</li>
+    </ol>
+  </li>
+  <li> Adaboost classifier 
+    <ol>
+      <li> Adaboost classifier with default base class with default parameters</li>
+      <li> Adaboost classifier with SVM (with best hyperparameters) as the base class, and hyperparameter selction of boosting parameters. </li>
+      <li> Adaboost classifier with Decision Trees (with best hyperparameters) as the base class, and hyperparameter selection of boosting parameters.</li>
+    </ol>
+  </li>
+  <li> Voting ensamble classifier
+    <ol>
+      <li> Ensamble of classifiers Logistic Regression and Support Vector Classifier (with best hyperparameters selected before)</li>
+    </ol>
+  </li>
+  </li>
 </p>
+<p>
+  <h2> Requirements</h2>
+  Scikit-learn 
+  </p>
+  <p>
+  Note: 
+  <ol>
+    <li>In some classifiers, the validation curve is constructed using parameter 'cv' less than 10 as a result of lower compute power and time. Feel free to increase the value of cv if you have the compute time and power. </li>
+    <li> Feel free to use other classifiers to build the voting classifier (ideally classifiers that make uncorrelated errors on samples make good candidates for voting classifier)</li>
+    </ol>
+    
+  
+  
+  <
