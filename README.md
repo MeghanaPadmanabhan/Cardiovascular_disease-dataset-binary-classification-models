@@ -1,4 +1,4 @@
-# Heart_UCI-dataset-binary-classification-models
+# Cardiovascular_disease-dataset-binary-classification-models
 This repository discusses the binary classification models (with hyperparameter tuning) with strategies to obtain the best performing models with the best performing model on the dataset.
 <p>
 <h2>Strategy used for arriving at the best performing binary classification problem model</h2>
