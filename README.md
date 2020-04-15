@@ -68,7 +68,7 @@ k equal samples and training is performed on k-1 sample sets and validation on o
   </li>
   </li>
 </p>
-
+</p>
   <h2> Requirements</h2>
   Scikit-learn 
   
