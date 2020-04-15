@@ -73,12 +73,11 @@ k equal samples and training is performed on k-1 sample sets and validation on o
   Scikit-learn 
   </p>
   <p>
-  Note: 
+  <h2>Note </h2>
   <ol>
     <li>In some classifiers, the validation curve is constructed using parameter 'cv' less than 10 as a result of lower compute power and time. Feel free to increase the value of cv if you have the compute time and power. </li>
     <li> Feel free to use other classifiers to build the voting classifier (ideally classifiers that make uncorrelated errors on samples make good candidates for voting classifier)</li>
     </ol>
+    </p>
     
   
-  
-  <
